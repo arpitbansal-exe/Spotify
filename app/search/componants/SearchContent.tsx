@@ -10,6 +10,7 @@ interface SearchContentProps {
 const SearchContent:React.FC<SearchContentProps> = ({
     songs
 }) => {
+    const onPlay=useOnPlay(songs);
     if(songs.length===0){
         return(
             <div
@@ -26,7 +27,6 @@ const SearchContent:React.FC<SearchContentProps> = ({
             </div>
         )
     }
-    const onPlay=useOnPlay(songs);
     return (
     <div className="flex flex-col gap-y-2 w-full px-6">
         {songs.map((item) => (
