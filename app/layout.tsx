@@ -8,6 +8,7 @@ import ModelProvider from '@/providers/ModelProvider'
 import ToasterProvider from '@/providers/Toasterprovider'
 import getSongsByUserId from '@/actions/getSongsByUserId'
 import Player from './componants/Player'
+import { Analytics } from '@vercel/analytics/react';
 const font = Figtree({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export default async function RootLayout({
             <Sidebar
               songs={userSongs}>
               {children}
+              <Analytics />
             </Sidebar>
             <Player/>
           </UserProvider>
