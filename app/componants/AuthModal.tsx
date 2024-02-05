@@ -40,7 +40,7 @@ const AuthModel=()=>{
         <Auth
             theme="dark"
             magicLink={true}
-            providers={['google','github']}
+            providers={['google']}
             supabaseClient={supabaseClient}
             appearance={{
                 theme:ThemeSupa,
