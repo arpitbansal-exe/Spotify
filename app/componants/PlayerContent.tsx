@@ -107,7 +107,8 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
                 md:hidden
                 col-auto
                 w-full
-                ml-10
+                mr-2
+                justify-end
                 items-center
             '>
         <div
@@ -116,7 +117,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
                 h-10
                 w-10
                 flex
-                items-center
+                items-end
                 justify-center
                 rounded-full
                 bg-white
