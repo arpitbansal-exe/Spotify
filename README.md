@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Spotify Clone
+
+**This project is a Spotify Clone website built using Next.js and Supabase.** It allows users to browse music,like, add and listen to songs just like the popular music streaming platform Spotify.
+
+
+## Tech Stack
+
+**Frontend**
+
+- **Next.js** A React framework for building server-side rendered and static web applications.
+
+- **Supabase** An open-source alternative to Firebase that provides a scalable backend for applications, including authentication, database, and storage services.
 ## Getting Started
+Follow these steps to set up the project locally:
 
-First, run the development server:
-
+- **Clone the repository:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/your-username/spotify-clone.git
+  cd spotify-clone
+```
+- **Install dependencies:**
+```bash
+  npm install
+```
+- **Create a .env.local file in the root of your project and add the following environment variables:**
+```bash
+  NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+  NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+  SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Run the development server:**
+```bash
+  npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Environment Variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run this project, you will need to add the following environment variables to your .env file
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+- `NEXT_PUBLIC_SUPABASE_URL`: The URL of your Supabase project. You can find this in your Supabase dashboard under Settings > API.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`: The anonymous key of your Supabase project. Also available in your Supabase dashboard under Settings > API.
+- `SUPABASE_SERVICE_ROLE_KEY`: The service role key for your Supabase project. This key is used for server-side operations that require elevated permissions.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Acknowledgements
+
+ - [Next.js]( https://nextjs.org/)
+ - [Supabase](https://supabase.io/)
+
+## Authors
+
+- [@arpitbansal-exe](https://www.github.com/arpitbansal-exe)
+
+
+## Deployed Demo
+
+#### Deployed on vercel: [https://bansal.vercel.app/](https://bansal.vercel.app/)
+
+***Happy Learning!***
+
